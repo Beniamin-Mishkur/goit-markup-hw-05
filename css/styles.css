@@ -671,7 +671,8 @@ img {
   background-color: #e7e9fc;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-window-btn .btn-icon {
@@ -843,9 +844,9 @@ img {
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   fill: transparent;
-  transition: background-color 250ms cubic-bezier (0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier (0.4, 0, 0.2, 1);
 }
 
 .form-btn:hover,
@@ -853,7 +854,7 @@ img {
   background: #404bbf;
 }
 
-.check-input:checked + .checkbox-label > .custom-checkbox {
+.check-input:checked + .checkbox-label .custom-checkbox {
   border-radius: 2px;
   background-color: #404bbf;
   border: none;
@@ -882,4 +883,5 @@ img {
   width: 10px;
   height: 8px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* fill: transparent; */
 }
