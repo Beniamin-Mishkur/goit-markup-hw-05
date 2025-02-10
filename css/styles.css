@@ -534,6 +534,69 @@ img {
   fill: #f4f4fd;
 }
 
+.subscription {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
+
+.subscr-text {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.subscr-form {
+  display: flex;
+}
+
+.subscr-form-field input {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: transparent;
+  padding-left: 16px;
+  outline: none;
+}
+
+.subscr-form input::placeholder {
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.subscr-btn {
+  /* position: relative; */
+  border-radius: 4px;
+  padding: 8px 24px;
+  /* width: 165px; */
+  height: 40px;
+  background-color: #4d5ae5;
+  border: none;
+  margin-left: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+}
+
+.subscr-icon {
+  margin-left: 16px;
+  fill: tomato;
+}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -705,7 +768,6 @@ img {
 .form-field textarea:focus::placeholder {
   color: #4d5ae5;
 }
-
 
 .checkbox-label {
   display: flex;

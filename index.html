@@ -559,7 +559,29 @@
             </li>
           </ul>
         </div>
-        <div class="subscription-form"></div>
+        <div class="subscription">
+          <p class="subscr-text">Subscribe</p>
+          <form class="subscr-form">
+            <div class="subscr-form-field">
+              <label class="subscr-form-label" for="subscr-input"></label>
+              <input
+                class="subscr-form-input"
+                type="email"
+                name=""
+                id="subscr-input"
+                placeholder="E-mail"
+              />
+            </div>
+            <div subscr-btn-wrap>
+              <button class="subscr-btn" type="button">
+                Subscribe
+              <svg class="subscr-icon" width="24" height="24">
+                <use href="./images/icons.svg#-papper-plan"></use>
+              </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-open">
@@ -646,5 +668,7 @@
         </form>
       </div>
     </div>
+  </body>
+</html>
   </body>
 </html>
