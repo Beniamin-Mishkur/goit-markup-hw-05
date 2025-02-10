@@ -562,14 +562,15 @@
         <div class="subscription">
           <p class="subscr-text">Subscribe</p>
           <form class="subscr-form">
-            <label class="subscr-form-label" for="subscr-input"></label>
-            <input
-              class="subscr-form-input"
-              type="email"
-              id="subscr-input"
-              placeholder="E-mail"
-            />
-            <button class="subscr-btn" type="button">
+            <label class="subscr-form-label" for="subscr-input">
+              <input
+                class="subscr-form-input"
+                type="email"
+                id="subscr-input"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="subscr-btn" type="button" submit>
               Subscribe
               <svg class="subscr-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-papper-plane"></use>
@@ -589,16 +590,16 @@
         <p class="form-title">Leave your contacts and we will call you back</p>
         <form class="feedback-form">
           <div class="form-field">
-            <label class="form-label" for="input-name">Name</label>
+            <label class="form-label" for="user-name">Name</label>
             <div class="input-wrapper">
               <input
                 class="form-input"
                 type="text"
-                name="input-name"
-                id="input-name"
+                name="user-name"
+                id="user-name"
                 placeholder=""
               />
-              <svg class="form-icon" width="16" height="26">
+              <svg class="form-icon" width="18" height="24 ">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
@@ -633,7 +634,7 @@
               </svg>
             </div>
           </div>
-          <div class="form-field">
+          <div class="form-field comment">
             <label class="form-label" for="user-comment">Comment</label>
             <textarea
               name="user-comment"
