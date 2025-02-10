@@ -562,6 +562,7 @@ img {
   background-color: transparent;
   padding-left: 16px;
   outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscr-form input::placeholder {
@@ -569,6 +570,7 @@ img {
   line-height: 2;
   letter-spacing: 0.04em;
   color: #fff;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscr-form-field input:focus {
@@ -597,6 +599,7 @@ img {
   letter-spacing: 0.04em;
   text-align: center;
   color: #fff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscr-btn:hover,
@@ -719,6 +722,7 @@ img {
   line-height: 1.16667;
   letter-spacing: 0.04em;
   color: #8e8f99;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-wrapper {
@@ -732,6 +736,7 @@ img {
   transform: translateY(-50%);
   cursor: pointer;
   fill: #2e2f42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-field input {
@@ -740,6 +745,7 @@ img {
   padding-left: 38px;
   width: 360px;
   height: 40px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-field textarea {
@@ -782,7 +788,6 @@ img {
 }
 
 .checkbox-label {
-  display: flex;
   align-items: flex-start;
   justify-content: center;
   font-size: 12px;
@@ -797,11 +802,10 @@ img {
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #4d5ae5;
-  margin-left: 2px;
 }
 
 .custom-checkbox {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 16px;
@@ -810,10 +814,12 @@ img {
   background-color: transparent;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox-icon {
   fill: transparent;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-btn {
