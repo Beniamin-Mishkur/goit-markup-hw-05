@@ -251,7 +251,7 @@ img {
 }
 
 .arguments-title {
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .arguments-list-item .arguments-title {
@@ -555,6 +555,10 @@ img {
 }
 
 .subscr-form input {
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #ffffff;
   border: 1px solid #fff;
   border-radius: 4px;
   width: 264px;
@@ -570,7 +574,7 @@ img {
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
-  color: #fff;
+  color: #ffffff;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -587,6 +591,7 @@ img {
   border-radius: 4px;
   padding: 8px 24px;
   height: 40px;
+  min-width: 165px;
   background-color: #4d5ae5;
   border: none;
   display: flex;
@@ -764,7 +769,7 @@ img {
   border-radius: 4px;
   padding-left: 16px;
   height: 120px;
-  outline: transparent; 
+  outline: transparent;
   background-color: transparent;
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -838,9 +843,21 @@ img {
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   fill: transparent;
-  transition: 250ms cubic-bezier (0.4, 0, 0.2, 1),
+  transition: background-color 250ms cubic-bezier (0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-btn:hover,
+.form-btn:focus {
+  background: #404bbf;
+}
+
+.check-input:checked + .checkbox-label > .custom-checkbox {
+  border-radius: 2px;
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
 }
 
 .form-btn {
@@ -861,14 +878,8 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-btn:hover,
-.form-btn:focus {
-  background: #404bbf;
-}
-
-.check-input:checked + .checkbox-label .custom-checkbox {
-  border-radius: 2px;
-  background-color: #404bbf;
-  border: none;
-  fill: #f4f4fd;
+.checkbox-icon {
+  width: 10px;
+  height: 8px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
