@@ -571,11 +571,18 @@ img {
   color: #fff;
 }
 
+.subscr-form-field input:focus {
+  border-color: #31d0aa;
+  outline: none;
+}
+
+.subscr-form-field input:focus::placeholder {
+  color: #31d0aa;
+}
+
 .subscr-btn {
-  /* position: relative; */
   border-radius: 4px;
   padding: 8px 24px;
-  /* width: 165px; */
   height: 40px;
   background-color: #4d5ae5;
   border: none;
@@ -592,9 +599,14 @@ img {
   color: #fff;
 }
 
+.subscr-btn:hover,
+.subscr-btn:focus {
+  background-color: #31d0aa;
+}
+
 .subscr-icon {
   margin-left: 16px;
-  fill: tomato;
+  fill: #fff;
 }
 
 .backdrop {
