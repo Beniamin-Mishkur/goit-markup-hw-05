@@ -551,9 +551,10 @@ img {
 
 .subscr-form {
   display: flex;
+  gap: 24px;
 }
 
-.subscr-form-field input {
+.subscr-form input {
   border: 1px solid #fff;
   border-radius: 4px;
   width: 264px;
@@ -573,12 +574,12 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.subscr-form-field input:focus {
+.subscr-form input:focus {
   border-color: #31d0aa;
   outline: none;
 }
 
-.subscr-form-field input:focus::placeholder {
+.subscr-form input:focus::placeholder {
   color: #31d0aa;
 }
 
@@ -588,11 +589,10 @@ img {
   height: 40px;
   background-color: #4d5ae5;
   border: none;
-  margin-left: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
-
+  cursor: pointer;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -745,14 +745,22 @@ img {
   padding-left: 38px;
   width: 360px;
   height: 40px;
+  background-color: transparent;
+  outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-field textarea {
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   padding-left: 16px;
   height: 120px;
+  background-color: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-field input:focus {
@@ -787,11 +795,15 @@ img {
   color: #4d5ae5;
 }
 
+.checkbox-wrapper {
+  margin-bottom: 24px;
+}
+
 .checkbox-label {
   align-items: flex-start;
   justify-content: center;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
   margin-top: 8px;
@@ -814,16 +826,13 @@ img {
   background-color: transparent;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.checkbox-icon {
   fill: transparent;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier (0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-btn {
-  margin: 24px 0;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -849,9 +858,6 @@ img {
 .check-input:checked + .checkbox-label .custom-checkbox {
   border-radius: 2px;
   background-color: #404bbf;
-  border: 1px solid #404bbf;
-}
-
-.check-input:checked + .checkbox-label > .custom-checkbox .checkbox-icon {
+  border: none;
   fill: #f4f4fd;
 }
